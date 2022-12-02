@@ -1,0 +1,11 @@
+.box {
+  height: 2000px;
+  background-color: #eee;
+}
+.text {
+  margin-top: 15px;
+  width: 150px;
+}
+img {
+  width: 100px;
+}
