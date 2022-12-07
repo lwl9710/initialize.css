@@ -5,7 +5,7 @@
 */
 
 /* 初始化边距 start */
-html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd, caption, th, td, input, select, textarea, button {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, dt, dd, caption, th, td, input, select, textarea, button, pre {
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,6 @@ html {
 }
 
 body {
-  overflow: overlay;
   color: #000;
 }
 
@@ -32,8 +31,8 @@ a {
 }
 
 img {
-  vertical-align: top;
   border: none;
+  vertical-align: top;
 }
 
 ul, ol {
@@ -48,6 +47,7 @@ table, caption, th, td {
 
 table {
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 caption {
@@ -78,22 +78,22 @@ button {
 /* 表单 end */
 
 /* 滚动条 start */
-.fixed-scroll-bar {
+body, .element-scroll-bar {
   overflow: overlay;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar, .element-scroll-bar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .element-scroll-bar::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .8);
   box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, .element-scroll-bar::-webkit-scrollbar-track {
   background-color: rgb(100, 100, 100, .4);
 }
 /* 滚动栏 end */
