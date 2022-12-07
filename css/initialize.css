@@ -120,9 +120,12 @@ body::-webkit-scrollbar-track, .element-scroll-bar::-webkit-scrollbar-track {
   -webkit-line-clamp: 3;
 }
 
-.cearfix::after {
+.clearfix::before, .clearfix::after {
   display: block;
   content: "";
+}
+
+.clearfix::after {
   clear: both;
 }
 /* 常用样式 end */
