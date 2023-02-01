@@ -41,7 +41,7 @@ ul, ol {
 /* 常用元素 end */
 
 /* 表单 start */
-table, caption, th, td {
+table.border, table.border caption, table.border th, table.border td {
   border: 1px solid #000;
 }
 
