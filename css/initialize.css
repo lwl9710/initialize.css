@@ -71,6 +71,16 @@ button {
   background-color: #FFF;
   border: none;
 }
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
 /* 表单 end */
 
 /* 滚动条 start */
